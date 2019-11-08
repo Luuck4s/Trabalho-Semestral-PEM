@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    background-color: hsl(0, 0%, 16%);
+}
+
+#container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 25%);
+    margin-top: 10%;
+    border-radius: 30px;
+}
+#containerTp{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 25%);
+    margin-top: 10%;
+    border-radius: 30px;
+}
+#voltar{
+    display: flex;
+    font-size: 20px;
+    color: aliceblue;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+.itemTp{
+    color: rgb(247, 76, 76);
+    font-size: 30px;
+    text-decoration: none;
+}
+#textTitulo{
+    color: aliceblue;
+}
