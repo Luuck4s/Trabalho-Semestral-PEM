@@ -5,29 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/estiloExercicio.css">
     <title>Média</title>
 </head>
 
 <body>
-    <a href="../index.html">Voltar</a>
-    <h1>Entre com as 3 notas do estudante</h1>
-    <p>
-        1ª nota (Avaliação Semestral):
-        <br>
-        <input type="text" id="primeiraNota">
-    </p>
-    <p>
-        2ª nota (Enxame Final):
-        <br>
-        <input type="text" id="segundaNota">
-    </p>
-    <p>
-        3ª nota (Trabalho):
-        <br>
-        <input type="text" id="terceiraNota">
-    </p>
-    <button onclick="calcular()">Calcular</button>
-    <p id="resultado"></p>
+    <div id="container">
+        <a id="voltar" href="../index.html">Voltar</a>
+        <h1 id="tituloExercicio">Entre com as 3 notas do estudante</h1>
+        <p class="input">
+            1ª nota (Avaliação Semestral):
+            <input type="text" id="primeiraNota">
+        </p>
+        <p class="input">
+            2ª nota (Enxame Final):
+
+            <input type="text" id="segundaNota">
+        </p>
+        <p class="input">
+            3ª nota (Trabalho):
+            <input type="text" id="terceiraNota">
+        </p>
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
     <script src="./script.js"></script>
 </body>
 

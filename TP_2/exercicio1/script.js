@@ -1,28 +1,29 @@
+var qtdSalario = 0
+
 function calcular() {
-    var p = document.getElementById("resultado")
+    if (qtdSalario < 25) {
+        var p = document.getElementById("resultado")
 
-    var salarios = []
-    p.innerHTML += "Sálarios Anteriores <br>"
-    for (let i = 0; i <= 24; i++) {
-        salarios.push(Math.ceil(Math.random() * (2500 - 450) + 450))
-        p.innerHTML += (i + 1) + "º salário: R$ " + salarios[i].toFixed(2) + "<br>"
-    }
+        var salario = Number(window.prompt("Entre com o salário: \n\n" + (25 - qtdSalario) + " salários restantes"))
 
-    p.innerHTML += "<br>Novos Sálarios <br>"
 
-    for (let i = 0; i <= 24; i++) {
-        if (salarios[i] <= 500) {
-            salarios[i] += (salarios[i] * 0.05)
-        } else if (salarios[i] <= 1200) {
-            salarios[i] += (salarios[i] * 0.12)
+        if (salario <= 500) {
+            salario += (salario * 0.05)
+        } else if (salario <= 1200) {
+            salario += (salario * 0.12)
         }
 
-        if (salarios[i] <= 600) {
-            salarios[i] += 150
+        if (salario <= 600) {
+            salario += 150
         } else {
-            salarios[i] += 100
+            salario += 100
         }
 
-        p.innerHTML += (i + 1) + "º salário: R$ " + salarios[i].toFixed(2) + "<br>"
+        alert("Novo salário com bonificação e o auxílio-escola R$ " + salario.toFixed(2))
+        qtdSalario++
+
+        calcular()
+    }else{
+        return false
     }
 }

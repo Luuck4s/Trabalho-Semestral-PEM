@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/estiloExercicio.css">
     <title>Ordenar</title>
 </head>
+
 <body>
-    <a href="../index.html">Voltar</a>
-    <h1>Entre com os 3 números</h1>
-    <p>
-        1ª número:
-        <br>
-        <input type="text" id="a">
-    </p>
-    <p>
-        2ª número:
-        <br>
-        <input type="text" id="b">
-    </p>
-    <p>
-        3ª número:
-        <br>
-        <input type="text" id="c">
-    </p>
-    <button onclick="calcular()">Ordenar</button>
-    <p id="resultado"></p>
+    <div id="container">
+        <a id="voltar" href="../index.html">Voltar</a>
+        <h1 id="tituloExercicio">Entre com os 3 números</h1>
+        <p class="input">
+            1ª número:
+            <br>
+            <input type="text" id="a">
+        </p>
+        <p class="input">
+            2ª número:
+            <br>
+            <input type="text" id="b">
+        </p>
+        <p class="input">
+            3ª número:
+            <br>
+            <input type="text" id="c">
+        </p>
+        <button onclick="calcular()">Ordenar</button>
+        <p id="resultado"></p>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
